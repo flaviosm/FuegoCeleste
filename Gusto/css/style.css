@@ -4,6 +4,7 @@ body, html {
 	-webkit-font-smoothing: antialiased !important;
 	color: #777;
 	font-weight: 400;
+	font-size: 100%;
 	width: 100% !important;
 	height: 100% !important;
 }
@@ -23,7 +24,7 @@ h2 {
 h2::after {
 	position: absolute;
 	content: "";
-	background: #d43031;
+	background: #27a9e1;
 	height: 2px;
 	width: 70px;
 	bottom: 0;
@@ -106,7 +107,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	margin: 0 40px 0 40px;
 }
 #menu.navbar-default .navbar-nav > li > a:hover {
-	color: #d43031;
+	color: #27a9e1;
 }
 .on {
 	background-color: #262626 !important;
@@ -114,15 +115,15 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	padding: 10px 0 !important;
 }
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-	color: #d43031 !important;
+	color: #27a9e1 !important;
 	background-color: transparent;
 }
 .navbar-toggle {
 	border-radius: 0;
 }
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-	background-color: #d43031;
-	border-color: #d43031;
+	background-color: #27a9e1;
+	border-color: #27a9e1;
 }
 .navbar-default .navbar-toggle .icon-bar {
 	background-color: #FFF;
@@ -160,8 +161,8 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 }
 .btn-custom:hover, .btn-custom:focus, .btn-custom.focus, .btn-custom:active, .btn-custom.active {
 	color: #ddd;
-	border: 2px solid #d43031;
-	background-color: #d43031;
+	border: 2px solid #27a9e1;
+	background-color: #27a9e1;
 }
 /* Header Section */
 .intro {
@@ -179,10 +180,11 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 .intro .overlay {
 	background: rgba(0,0,0,0.4);
 }
-body.intro h1 {
-	font-family: 'Berlin Sans FB Demi Bold', Corbel bold;
+.intro h1 {
+	text-shadow: 0px 5px 2px rgba(0, 0, 0, 1);
+	font-family: 'Berlin Sans FB Demi Bold', cursive;
+	font-size: 4em;
 	color: #27a9e1;
-	font-size: 120%;
 	font-weight: 400;
 }
 .intro span {
@@ -342,7 +344,7 @@ header .intro-text {
 #contact h3::after {
 	position: absolute;
 	content: "";
-	background: #d43031;
+	background: #27a9e1;
 	height: 2px;
 	width: 40px;
 	bottom: 0;
