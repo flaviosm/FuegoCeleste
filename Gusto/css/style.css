@@ -205,6 +205,15 @@ header .intro-text {
 	padding-bottom: 50px;
 	text-align: center;
 }
+header .intro-foto {
+	margin: 2em;
+	text-align: center;
+}
+	header .intro-foto img{
+		display: auto;
+		max-width: 100%;
+		height: auto;
+	}
 /* Features Section */
 #features {
 	padding: 120px 0;
