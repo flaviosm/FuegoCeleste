@@ -85,6 +85,10 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	float: none;
 	vertical-align: top;
 }
+.navbar-header + .in{
+	background: rgba(0,0,0,0.6);
+	transition: all .3s ease-in;
+}
 .navbar .navbar-collapse {
 	text-align: center;
 }
