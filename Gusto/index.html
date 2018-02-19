@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html>
    <head>
@@ -108,7 +110,8 @@
                         <h2>Nossa História</h2>
                      </div>
                      <p>Projeto Fuego Celeste, nasceu por 4 amigos apreciadores de uma boa carne e amantes da cultura parrilleira. Após diversos eventos de fogo de chão e
-                        parriladas, eles decidiram abrir um espaço na Vila Mariana e proporcionar essa deliciosa experiência para o público paulistano amantes de uma boa carne.</p>
+                        parriladas, eles decidiram abrir um espaço na Vila Mariana e proporcionar essa deliciosa experiência para o público paulistano amantes de uma boa carne.
+                     </p>
                   </div>
                </div>
             </div>
@@ -329,7 +332,7 @@
                   <div class="row">
                      <div class="col-md-12">
                         <div class="form-group">
-                           <input type="text" id="name" class="form-control" placeholder="Nome:" required="required"> 
+                           <input type="text" id="name" name="name" class="form-control"> 
                            <p class="help-block text-danger"></p>
                         </div>
                      </div>
@@ -337,23 +340,37 @@
                   <div class="row">
                      <div class="col-md-6">
                         <div class="form-group">
-                           <input type="email" id="email" name="email" class="form-control" placeholder="Email:" required>
+                           <input type="email" id="email" name="email" class="form-control" required="required">
                            <p class="help-block text-danger"></p>
                         </div>
                      </div>
                      <div class="col-md-6">
-                              <div class="form-group">
-                                          <input class="form-control phone-ddd-mask" id="tel_number" placeholder="Celular:" required="required" type="text">
-                                 <p class="help-block text-danger"></p>
-                              </div>
+                        <div class="form-group">
+                           <input class="form-control phone-ddd-mask" id="phone" name="phone" required="required" type="text">
+                           <p class="help-block text-danger"></p>
+                        </div>
                      </div>
                   </div>
                   <div class="form-group">
-                     <textarea name="message" id="message" class="form-control" rows="4" placeholder="Mensagem:" required></textarea>
+                     <textarea name="message" id="message" class="form-control" rows="4" required></textarea>
                      <p class="help-block text-danger"></p>
                   </div>
                   <div id="success"></div>
                   <button type="submit" class="btn btn-custom btn-lg">Enviar</button>
+                  <div class="modal fade response-message">
+                     <div class="modal-dialog">
+                        <div class="modal-content">
+                           <div class="modal-header">
+                              <button type="button" class="close" data-dismiss="modal"
+                                 aria-hidden="true">&times;</button>
+                              <h4 class="modal-title">Modal title</h4>
+                           </div>
+                           <div class="modal-body">
+                              Sua Mensagem foi enviada, em breve retornaremos sua mensagem.
+                           </div>
+                        </div>
+                     </div>
+                  </div>
                </form>
             </div>
          </div>
@@ -379,18 +396,18 @@
       <script type="text/javascript" src="js/jqBootstrapValidation.js"></script> 
       <script type="text/javascript" src="js/contact_me.js"></script> 
       <script type="text/javascript" src="js/main.js"></script>
-
+      <script src='js/modal.js'></script>
+      <script src='js/TMForm.js'></script>
       <script src="js/input-mask/jquery.inputmask.js"></script>
       <script src="js/input-mask/jquery.inputmask.date.extensions.js"></script>
       <script src="js/input-mask/jquery.inputmask.extensions.js"></script>  
-     
-     <script>
-           $(function () {
-
-            //Telefone
-            $("#tel_number").inputmask("(999) 99999-9999");
-           });               
-
+      <script>
+         $(function () {
+         
+          //Telefone
+          $("#phone").inputmask("(999) 99999-9999");
+         });               
+         
       </script>      
    </body>
 </html>
