@@ -43,7 +43,7 @@
                <ul class="nav navbar-nav">
                   <li><a href="#features" class="page-scroll">Especialidades</a></li>
                   <li><a href="#about" class="page-scroll">Sobre</a></li>
-                  <li><a href="#restaurant-menu" class="page-scroll">Menu</a></li>
+                  <!-- <li><a href="#restaurant-menu" class="page-scroll">Menu</a></li> -->
                   <li><a href="#team" class="page-scroll">Nossa Equipe</a></li>
                   <li><a href="#contact" class="page-scroll">Contato</a></li>
                </ul>
@@ -70,48 +70,68 @@
       </header>
       <!-- Features Section -->
       <div id="features" class="text-center">
+         <a id="Especialidades"></a>
          <div class="container">
             <div class="section-title">
-               <h2>NOSSAS ESPECIALIDADES</h2>
+               <p><a href="./cardapio.html"><h2>CARDÁPIO ON-LINE</h2></a></p>
+               <!--<h2>NOSSAS ESPECIALIDADES</h2> -->
             </div>
+
             <div class="row">
-               <div class="col-xs-12 col-sm-4">
-                  <div class="features-item">
-                     <h3>Bife ancho</h3>
-                     <img src="img/specials/bife_ancho.jpg" class="img-responsive" alt="">
-                     <p>Corte dianteiro do contra-filé, localizado entre a 2a e a 6a costela, com um belo marmoreio proporciona um ótimo sabor e suculência no corte.</p>
+               <!--
+               <div class="nav flex-column nav-pills col-sm-3 col-md-2 mn-especialidades"  id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                     // MENU DE ESPECIALIDADES //
+                     <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Cardapio completo</a>
+                     <a class="nav-link" id="v-pills-carnes-tab" data-toggle="pill" href="#v-pills-carnes" role="tab" aria-controls="v-pills-carnes" aria-selected="false">carnes</a>
+                     <a class="nav-link" id="v-pills-saladas-tab" data-toggle="pill" href="#v-pills-saladas" role="tab" aria-controls="v-pills-saladas" aria-selected="false">Saladas</a>
+                     <a class="nav-link" id="v-pills-frangos-tab" data-toggle="pill" href="#v-pills-frangos" role="tab" aria-controls="v-pills-frangos" aria-selected="false">frango</a>
+                     <a class="nav-link" id="v-pills-bebidas-tab" data-toggle="pill" href="#v-pills-bebidas" role="tab" aria-controls="v-pills-bebidas" aria-selected="false">bebidas</a>
+
+                     <a class="nav-link mn-especialidades-subitem" id="v-pills-bebidas-cervejas-tab" 
+                        data-toggle="pill" href="#v-pills-bebidas-cervejas" role="tab" aria-controls="v-pills-bebidas-cervejas" aria-selected="false">cerveja</a>
+                     <a class="nav-link mn-especialidades-subitem" id="v-pills-bebidas-refrigerantes-tab" 
+                        data-toggle="pill" href="#v-pills-bebidas-refrigerantes" role="tab" aria-controls="v-pills-bebidas-refrigerantes" aria-selected="false">refrigerantes</a> 
+                     <a class="nav-link mn-especialidades-subitem" id="v-pills-bebidas-vinhos-tab" 
+                        data-toggle="pill" href="#v-pills-bebidas-vinhos" role="tab" aria-controls="v-pills-bebidas-vinhos" aria-selected="false">vinhos</a>
+
+                </div>
+
+                // CONTEUDO DO MENU DE ESPECIALIDADES //
+                <div class="tab-content tab-content-especialidades col-sm-9 col-md-10" id="v-pills-tabContent">
+                  <div class="tab-pane active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+
+                     // CARREGA TODOS //
+                     <div class="item3"></div>
+                     <div class="bebidas"></div>
                   </div>
-                  <div class="features-item">
-                        <h3>Chivito</h3>
-                        <img src="img/specials/Chivito.jpg" class="img-responsive" alt="">
-                        <p>Pão, maionese, alface, tomate, file mignon ao ponto, 5 fatias de bacon crocante, presunto, queijo mussarela, pimentão caramelizado na churrasqueira, ovo cozido e pão.</p>
-                  </div>                  
-               </div>
-               <div class="col-xs-12 col-sm-4">
-                  <div class="features-item">
-                     <h3>Bife chorizo</h3>
-                     <img src="img/specials/bife_chorizo.jpg" class="img-responsive" alt="">
-                     <p>Corte do centro do lombo ao lado do ancho, possui uma generosa capa de gordura. No Brasil este corte concorre lado a lado com a picanha.</p>
+
+                  <div class="tab-pane" id="v-pills-carnes" role="tabpanel" aria-labelledby="v-pills-carnes-tab">
+                     <div class="carnes"></div>
                   </div>
-                  <div class="features-item">
-                        <h3>Empanadas</h3>
-                        <img src="img/specials/empanadas.jpg" class="img-responsive" alt="">
-                        <p>Venha provar nossas deliciosas empanadas de Carne suave, queijo e cebola e cantimpalo.</p>
+                  <div class="tab-pane" id="v-pills-saladas" role="tabpanel" aria-labelledby="v-pills-saladas-tab">
+                     <div class="saladas"></div>
                   </div>
-               </div>
-               <div class="col-xs-12 col-sm-4">
-                 <div class="features-item">
-                     <h3>Assado de tira</h3>
-                     <img src="img/specials/assado_tira.jpg" class="img-responsive" alt="">
-                     <p>O corte extraído da costela dianteira, no sentido transversal ao dos ossos -----------------------------ssssssssssssssssssssss.</p>
+                  <div class="tab-pane" id="v-pills-frangos" role="tabpanel" aria-labelledby="v-pills-frangos-tab">
+                     <div class="frangos"></div>
                   </div>
-                  <div class="features-item">
-                     <h3>Pimentão</h3>
-                     <img src="img/specials/Pimentão.jpg" class="img-responsive" alt="">
-                     <p>Pimentão com queijo, ovo e temperos tipicos Fuego Celeste.</p>
+                  
+                  <div class="tab-pane" id="v-pills-bebidas" role="tabpanel" aria-labelledby="v-pills-bebidas-tab">
+                     <div class="bebidas"></div>
                   </div>
-               </div>
+
+                  <div class="tab-pane" id="v-pills-bebidas-cervejas" role="tabpanel" aria-labelledby="v-pills-bebidas-cervejas-tab">
+                     <div class="bebidas-cervejas"></div>
+                  </div>
+                  <div class="tab-pane" id="v-pills-bebidas-refrigerantes" role="tabpanel" aria-labelledby="v-pills-bebidas-refrigerantes-tab">
+                     <div class="bebidas-refrigerantes"></div>
+                  </div>
+                  <div class="tab-pane" id="v-pills-bebidas-vinhos" role="tabpanel" aria-labelledby="v-pills-bebidas-vinhos-tab">
+                     <div class="bebidas-vinhos"></div>
+                  </div>
+                </div>
+            -->    
             </div>
+
          </div>
       </div>
       <!-- About Section -->
@@ -133,6 +153,7 @@
          </div>
       </div>
       <!-- Restaurant Menu Section -->
+      <!--
       <div id="restaurant-menu">
          <div class="container">
             <div class="section-title text-center">
@@ -274,6 +295,14 @@
             </div>
          </div>
       </div>
+       -->
+       <div id="restaurant-menu">
+         <div class="container">
+            <div class="section-title text-center">
+               <h2>Pratos</h2>
+            </div>
+         </div>   
+      </div>  
       <!-- Gallery Section -->
       <div id="gallery">
          <div class="container-fluid">
@@ -398,6 +427,7 @@
             <div class="col-md-6">
                <div class="social">
                   <ul>
+                     <li><a href="https://api.whatsapp.com/send?phone=5511997619437"><i class="fa fa-whatsapp"></i></a></li>
                      <li><a href="https://www.facebook.com/FuegoCelesteOficial/"><i class="fa fa-facebook"></i></a></li>
                      <li><a href="https://www.instagram.com/FuegoCelesteOficial"><i class="fa fa-instagram"></i></a></li>
                   </ul>
@@ -405,8 +435,9 @@
             </div>
          </div>
       </div>
-      <script type="text/javascript" src="js/jquery.1.11.1.js"></script> 
-      <script type="text/javascript" src="js/bootstrap.js"></script> 
+      <!-- <script type="text/javascript" src="js/jquery.1.11.1.js"></script>  -->
+      <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script> 
+      <script type="text/javascript" src="js/bootstrap.min.js"></script> 
       <script type="text/javascript" src="js/SmoothScroll.js"></script> 
       <script type="text/javascript" src="js/jqBootstrapValidation.js"></script> 
       <script type="text/javascript" src="js/contact_me.js"></script> 
@@ -421,8 +452,21 @@
          
           //Telefone
           $("#phone").inputmask("(999) 99999-9999");
+         
+          //load do html
+          $(".item3").load("./cardapio/menu.html");
+          $(".carnes").load("./cardapio/carnes.html");
+          $(".saladas").load("./cardapio/saladas.html");
+          //$(".frangos").load("./cardapio/frangos.html");
+          $(".bebidas").load("./cardapio/bebidas.html");
+          $(".bebidas-cervejas").load("./cardapio/bebidas/bebidas-cervejas.html");
+          $(".bebidas-refrigerantes").load("./cardapio/bebidas/bebidas-refrigerantes.html");
+          $(".bebidas-vinhos").load("./cardapio/bebidas/bebidas-vinhos.html");
+
+          
          });               
          
-      </script>      
+      </script>    
+        
    </body>
 </html>

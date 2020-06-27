@@ -55,7 +55,7 @@ p.intro {
 	line-height: 24px;
 }
 a {
-	color: #8eb640;
+	color: #27a9e1;
 }
 a:hover, a:focus {
 	text-decoration: none;
@@ -222,9 +222,7 @@ header .intro-foto {
 #features {
 	padding: 120px 0;
 }
-#features .features-item {
-	margin: 0 20px;
-}
+
 #features img {
 	margin: 30px auto 20px;
 }
@@ -454,4 +452,57 @@ color: #999;
 }
 #footer a:hover {
 	color: #eee;
+}
+
+.mn-especialidades{
+	padding-top: 23px;
+}
+
+.mn-especialidades a{
+	padding:5px 10px;
+	display: block;
+	text-align: left;
+	font-size:  120%;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}
+
+.mn-especialidades-subitem{
+	margin-left: 15px;
+}
+.mn-especialidades a:focus{
+	background-color: #27a9e1;
+	color: #FFF;
+	border-radius: 5px;
+}
+.tab-content-especialidades{}
+
+.content-especialidades-title{
+	font-size: 130%;
+	padding-bottom: 15px;
+	position: relative;
+	text-transform: uppercase;
+}
+
+.content-especialidades-subtitle{
+	font-size: 120%;
+	padding-bottom: 15px;
+	position: relative;
+	text-transform: capitalize;
+}
+
+.content-especialidades-title::after,
+.content-especialidades-subtitle::after {
+	position: absolute;
+	content: "";
+	background: #FAD036;
+	height: 2px;
+	width: 70px;
+	bottom: 0;
+	margin-left: -35px;
+	left: 50%;
+}
+
+.content-especialidades-subtitle::after {
+	background: #ccc;
 }
